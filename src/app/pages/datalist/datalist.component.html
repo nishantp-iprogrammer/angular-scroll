@@ -1,4 +1,3 @@
-<!-- For Service -->
 <cdk-virtual-scroll-viewport #scroller itemSize="10" class="viewport">
   <div class="m-2 p-2 shadow" *cdkVirtualFor="let item of comp_data_list">
     <img src="{{item.thumbnailUrl}}" loading="lazy" alt="{{item.id}}">
@@ -11,18 +10,3 @@
     <mat-progress-spinner [mode]="'indeterminate'" [diameter]="50"></mat-progress-spinner>
   </div>
 </cdk-virtual-scroll-viewport>
-
-
-<!-- For Resolver  -->
-<!-- <cdk-virtual-scroll-viewport #scroller itemSize="10" class="viewport">
-  <div class="m-2 p-2 shadow" *cdkVirtualFor="let item of comp_data_list">
-    <img src="{{item.thumbnailUrl}}" loading="lazy" alt="{{item.id}}">
-    <div class="p-1">
-      <p class="lead p-0 m-0"><b>Id :</b> {{item.id || 'Loading...'}}</p>
-      <p class="lead"><b>Title :</b> {{item.title || 'Loading...'}}</p>
-    </div>
-  </div>
-  <div class="spinner">
-    <mat-progress-spinner [mode]="'indeterminate'" [diameter]="50"></mat-progress-spinner>
-  </div>
-</cdk-virtual-scroll-viewport> -->
