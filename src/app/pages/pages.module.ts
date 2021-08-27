@@ -8,7 +8,7 @@ import { PagesComponent } from './pages.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-
+import { MatToolbarModule } from '@angular/material/toolbar'
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     PagesRoutingModule,
     ScrollingModule,
     MatButtonModule,
+    MatToolbarModule,
     MatProgressSpinnerModule
   ], providers: [RouteResolver]
 })
