@@ -6,7 +6,7 @@
       <p class="lead"><b>Title :</b> {{item.title || 'Loading...'}}</p>
     </div>
   </div>
-  <div class="spinner">
+  <div class="spinner" *ngIf="comp_data_list.length===0">
     <mat-progress-spinner [mode]="'indeterminate'" [diameter]="50"></mat-progress-spinner>
   </div>
 </cdk-virtual-scroll-viewport>
