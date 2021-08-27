@@ -9,7 +9,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule } from '@angular/material/toolbar'
-
+import { MatIconModule } from '@angular/material/icon'
 @NgModule({
   declarations: [
     DatalistComponent,
@@ -21,7 +21,8 @@ import { MatToolbarModule } from '@angular/material/toolbar'
     ScrollingModule,
     MatButtonModule,
     MatToolbarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatIconModule
   ], providers: [RouteResolver]
 })
 export class PagesModule { }

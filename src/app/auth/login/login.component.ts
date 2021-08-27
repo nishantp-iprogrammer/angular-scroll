@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     if (this.loginForm.controls.email.value === 'demo@mail.com' && this.loginForm.controls.password.value === '123456') {
+      localStorage.setItem('email', this.loginForm.controls.email.value);
       this.router.navigateByUrl('/cart');
     }
   }

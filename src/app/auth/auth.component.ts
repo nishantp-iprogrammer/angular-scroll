@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-pages',
-  templateUrl: './pages.component.html',
-  styleUrls: ['./pages.component.scss']
+  selector: 'app-auth',
+  templateUrl: './auth.component.html',
+  styleUrls: ['./auth.component.scss']
 })
-export class PagesComponent implements OnInit {
+export class AuthComponent implements OnInit {
 
   constructor(
     private dataSrv: DataService,
@@ -23,8 +23,4 @@ export class PagesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  logout() {
-    localStorage.clear();
-    this.router.navigateByUrl('/');
-  }
 }
